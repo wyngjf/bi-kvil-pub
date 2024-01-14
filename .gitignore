@@ -1,0 +1,25 @@
+*.pyc
+*checkpoints*
+*.pth
+*.bash_history
+*.local/
+*.cache/
+*.ipython
+*.jupyter
+*.nv
+*.ssh/
+.vscode/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+data/
+# debug/
+models/
+build/
+sandbox/
+tmp/
+# config/dense_correspondence
+**/__pycache__
+*.ini
+.ipynb_checkpoints
