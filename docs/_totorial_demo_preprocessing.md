@@ -8,6 +8,15 @@ Download the example dataset from [TODO] or see below how to record your own dat
 
 ```
 
+Download checkpoints of DON and place it under `$HOME/dataset/checkpoints/dcn`. 
+```
+$HOME/dataset/checkpoints/dcn
+- object1
+- object2
+- ...
+- config.yaml
+```
+
 The raw data looks like the file structure below. And create a folder `canonical/dcn` and file `canonical_cfg.yaml` with the object that you would like to detect using
 Dense Object Net and how many candidate points you would like to have:
 
