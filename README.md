@@ -19,12 +19,29 @@ wget https://raw.githubusercontent.com/wyngjf/bi-kvil-pub/main/scripts/kvil_inst
 source kvil_install.sh
 ```
 
+After installation, run
+
+```shell
+robot_vision_install
+```
+and select (up / down arrow to navigate and space to select or deselect) the following dependencies.
+- apex
+- graphormer
+- groundingdino
+- mmpose
+- opendr
+- raft
+- sam
+
+Pay attention to the terminals. If you don't have CUDA configured properly, you may encounter problems when installing 
+`groundingDINO`. The script will just continue with error. You need to solve those issues accordingly and run the command again.
+
 ## Instructions
 
 ### Recording
 
-see [_tutorial_record_demo.md](docs%2F_tutorial_record_demo.md)
+see tutorial on [Recording](docs%2F_tutorial_record_demo.md)
 
 ### Preprocessing and K-VIL
 
-see [_totorial_demo_preprocessing.md](docs%2F_totorial_demo_preprocessing.md)
+see [Demo Preprocessing and K-VIL](docs%2F_totorial_demo_preprocessing.md)
