@@ -1,16 +1,8 @@
-# Keypoint-based Visual Imitation Learning (K-VIL)
+# Bi-KVIL: Keypoints-based Visual Imitation Learning of Bimanual Manipulation Tasks
 
----
-
-This repository contains source code for the following papers:
-
-1. Keypoint-based Visual Imitation Learning (K-VIL), [Project Website](https://sites.google.com/view/k-vil) 
-   1. uni-manual
-   2. single layer of master-slave relationship between two objects
-   
-2. Keypoints-based Visual Imitation Learning of Bimanual Manipulation Tasks (Bi-KVIL) [Project Website](https://sites.google.com/view/bi-kvil) 
-   1. bimanual manipulation
-
+Official Implementation of the [Bi-KVIL paper](https://sites.google.com/view/bi-kvil)
+- [Link to the website of Bi-KVIL](https://sites.google.com/view/bi-kvil)
+- [Link to the previous work KVIL](https://sites.google.com/view/k-vil)
 
 ---
 ## Installation
