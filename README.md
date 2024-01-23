@@ -21,4 +21,10 @@ source kvil_install.sh
 
 ## Instructions
 
-See [tutorial.md](docs%2Ftutorial.md)
+### Recording
+
+see [_tutorial_record_demo.md](docs%2F_tutorial_record_demo.md)
+
+### Preprocessing and K-VIL
+
+see [_totorial_demo_preprocessing.md](docs%2F_totorial_demo_preprocessing.md)
