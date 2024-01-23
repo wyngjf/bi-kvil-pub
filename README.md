@@ -15,7 +15,7 @@ After the installation, you can disable the auto-activation of the default "base
 Get and run the installation script for kvil. If you modify the paths, be aware to either add or leave out the concluding slash (`/`) dependent on how the default path is defined.
 
 ```shell
-wget https://raw.githubusercontent.com/wyngjf/bi-kvil-pub/main/kvil_install.sh
+wget https://raw.githubusercontent.com/wyngjf/bi-kvil-pub/main/scripts/kvil_install.sh
 source kvil_install.sh
 ```
 
