@@ -8,9 +8,9 @@ Download the example dataset from [TODO] or see below how to record your own dat
 source scripts/download.sh
 ```
 
-Download checkpoints of DON and place it under `$HOME/dataset/checkpoints/dcn`. 
+Download checkpoints of DON and place it under `$DEFAULT_CHECKPOINT_PATH/dcn`. 
 ```
-$HOME/dataset/checkpoints/dcn
+$DEFAULT_CHECKPOINT_PATH/dcn
 - object1
 - object2
 - ...
