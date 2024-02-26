@@ -38,3 +38,8 @@ Recording starts when the GUI pops up. Press `Esc` to stop.
 Recordings are saved to `~/dataset/raw`. 
 
 Copy all demonstrations of a task to a folder with meaningful name.
+
+
+## Record data to train your own DON
+
+see https://github.com/wyngjf/robot-vision-pub/blob/main/docs/tutorial.md
