@@ -4,6 +4,25 @@ Official Implementation of the [Bi-KVIL paper](https://sites.google.com/view/bi-
 - [Link to the website of Bi-KVIL](https://sites.google.com/view/bi-kvil)
 - [Link to the previous work KVIL](https://sites.google.com/view/k-vil)
 
+BibTeX:
+```
+@ARTICLE {gao_kvil_2023,
+    author = {Jianfeng Gao and Zhi Tao and Noémie Jaquier and Tamim Asfour},
+    title = {K-VIL: Keypoints-based Visual Imitation Learning},
+    pages = {3888--3908},
+    volume ={39},
+    number ={5},
+    journal ={IEEE Transactions on Robotics},
+    year = {2023}
+}
+@INPROCEEDINGS {gao_bikvil_2024,
+    author = {Jianfeng Gao and Xiaoshu Jin and Franziska Krebs and Noémie Jaquier and Tamim Asfour},
+    title = {Bi-KVIL: Keypoints-based Visual Imitation Learning of Bimanual Manipulation Tasks},
+    booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+    year = {2024}
+}
+```
+
 ---
 ## Installation
 
