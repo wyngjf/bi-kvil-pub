@@ -85,6 +85,7 @@ kvil_demo -h
 ```
 
 
+
 <details>
 <summary>Folder structure of a specific task after the perception pipeline</summary>
 
@@ -147,9 +148,9 @@ kvil_demo -h
 
 ```shell
 # first time or force re-compute
-kvil -p $DEFAULT_DATASET_PATH/bikvil_pub/PS/PS1 -n 6 -f
+kvil -p $DEFAULT_DATASET_PATH/PS1 -n 6 -f
 # reload to view pre-computed results
-kvil -p $DEFAULT_DATASET_PATH/bikvil_pub/PS/PS1 -n 6 -r
+kvil -p $DEFAULT_DATASET_PATH/PS1 -n 6 -r
 # for help
 kvil -h
 ```
@@ -179,7 +180,7 @@ or a monocular RGB-D camera (e.g. AzureKinect). see [_tutorial_record_demo.md](_
     ```shell
     kvil_annotate -p absolute/path/to/the/demonstration -n kvil
     # e.g. 
-    kvil_annotate -p $DEFAULT_DATASET_PATH/bikvil_pub/PS/PS1 -n kvil
+    kvil_annotate -p $DEFAULT_DATASET_PATH/PS1 -n kvil
     # for help
     kvil_annotate -h
     ```
@@ -192,7 +193,7 @@ or a monocular RGB-D camera (e.g. AzureKinect). see [_tutorial_record_demo.md](_
 4. Preprocessing. Run
     ```shell
     # For stereo
-    kvil_demo -p $DEFAULT_DATASET_PATH/bikvil_pub/PS/PS1 -n kvil -t 30 -v -tv -k
+    kvil_demo -p $DEFAULT_DATASET_PATH/PS1 -n kvil -t 30 -v -tv -k
     # For Monocular
-    kvil_demo -p $DEFAULT_DATASET_PATH/bikvil_pub/PS/PS1 -n kvil -t 30 -v -tv -k --mono
+    kvil_demo -p $DEFAULT_DATASET_PATH/PS1 -n kvil -t 30 -v -tv -k --mono
     ```

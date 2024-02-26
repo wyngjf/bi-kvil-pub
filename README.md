@@ -32,6 +32,8 @@ and select (up / down arrow to navigate and space to select or deselect) the fol
 - opendr
 - raft
 - sam
+- aot
+- unimatch
 
 Pay attention to the terminals. If you don't have CUDA configured properly, you may encounter problems when installing 
 `groundingDINO`. The script will just continue with error. You need to solve those issues accordingly and run the command again.

@@ -126,5 +126,6 @@ draw_split_line " Done "
 
 #pip uninstall numpy
 #pip install numpy==1.23.1
+pip install --upgrade setuptools==68.0.0
 
 cd "$current_path" || return
