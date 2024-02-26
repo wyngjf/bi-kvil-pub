@@ -5,7 +5,7 @@
 Download the example dataset from [TODO] or see below how to record your own data.
 
 ```shell
-
+source scripts/download.sh
 ```
 
 Download checkpoints of DON and place it under `$HOME/dataset/checkpoints/dcn`. 
@@ -77,9 +77,9 @@ run
 
 ```shell
 # For stereo
-kvil_demo -p $DEFAULT_DATASET_PATH/bikvil_pub/PS/PS1 -n kvil -t 30 -v -tv -k
+kvil_demo -p $DEFAULT_DATASET_PATH/PS1 -n kvil -t 30 -v -tv -k
 # For Monocular
-kvil_demo -p $DEFAULT_DATASET_PATH/bikvil_pub/PS/PS1 -n kvil -t 30 -v -tv -k --mono
+kvil_demo -p $DEFAULT_DATASET_PATH/PS1 -n kvil -t 30 -v -tv -k --mono
 # for help
 kvil_demo -h
 ```

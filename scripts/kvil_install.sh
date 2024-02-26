@@ -42,6 +42,7 @@ function check_or_set_path_variable() {
         echo -e "${RED}Environment variable ${BLUE}$var_name ${RED}is not set or not valid.${RESET}"
         read -p "Do you want to use the default path ($default_path)? [Y/n] " choice
         choice=${choice:-Y}  # Default to "Y" if user presses Enter without typing anything
+        mkdir -p $default_path
 
         if [[ $choice =~ ^[Yy]$ ]]; then
             export "$var_name"="$default_path"
@@ -62,9 +63,9 @@ function check_or_set_path_variable() {
 
 draw_split_line " Setup Env Variables "
 echo -e "${GREEN}specify path where you want to have robot-utils, robot-vision, and kvil package using PROJECT_PATH_CONTROL"
-check_or_set_path_variable "PROJECT_PATH_PUB" "$HOME/projects/paper_code"
-check_or_set_path_variable "DEFAULT_DATASET_PATH" "$HOME/dataset"
-check_or_set_path_variable "DEFAULT_CHECKPOINT_PATH" "$HOME/dataset/checkpoints"
+check_or_set_path_variable "PROJECT_PATH_PUB" "$HOME/projects/paper_code_pub"
+check_or_set_path_variable "DEFAULT_DATASET_PATH" "$PROJECT_PATH_PUB/dataset"
+check_or_set_path_variable "DEFAULT_CHECKPOINT_PATH" "$PROJECT_PATH_PUB/checkpoints"
 
 draw_split_line " Setup Conda Env "
 if conda info --envs | grep -q "$CONDA_ENV_NAME"; then
@@ -82,7 +83,8 @@ read -p $"Press ctrl+c to terminate. Enter to continue..."
 draw_split_line " Install deps "
 pip install numpy==1.23.1 fvcore cmake setuptools==68.0.0
 #conda install -y pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
-pip3 install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+#pip3 install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
 
 
 
@@ -122,6 +124,7 @@ cd "$PROJECT_PATH_PUB/bi-kvil-pub" || return
 pip install -e .
 draw_split_line " Done "
 
-
+#pip uninstall numpy
+#pip install numpy==1.23.1
 
 cd "$current_path" || return
